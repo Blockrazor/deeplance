@@ -1,17 +1,17 @@
-# Emurgolance
-Emurgo freelancer tracking system.
+# Deeplance
+Blockrazor freelancer tracking system.
 
 ## The problem
-Emurgo doesn't currently have a way to track the hours that freelancers spend working on our projects, or a way to track freelancer details and payment methods etc.
+Blockrazor doesn't currently have a way to track the hours that freelancers spend working on our projects, or a way to track freelancer details and payment methods etc.
 
 ## The solution
-The simplest possible solution to this problem is to create the most basic possible system to allow freelancers to submit their hours and other relevant details. Emurgolance is not intended to ever be complete because that implies being able to accurate predict what will be needed in future, so instead we use the C4 to iteratively build out the rest of the system based on the Serbian Model (logging problems and then sending minimal patches providing the simplest possible solution). This means Emurgolance will be a living system that is able to frictionlessly keep up with changes in the blockchain landscape.
+The simplest possible solution to this problem is to create the most basic possible system to allow freelancers to submit their hours and other relevant details. Deeplance is not intended to ever be complete because that implies being able to accurate predict what will be needed in future, so instead we use the C4 to iteratively build out the rest of the system based on the Serbian Model (logging problems and then sending minimal patches providing the simplest possible solution). This means Deeplance will be a living system that is able to frictionlessly keep up with changes in the blockchain landscape.
 
 ## Reminder
 Do read your code after you write it and ask, “Can I make this simpler?” We do use a nice minimalist and yet readable style. Learn it, adopt it, use it.
 
 <details>
-  <summary>How to run Emurgolance locally</summary>
+  <summary>How to run Deeplance locally</summary>
 <p>
 
 #### Install Meteor   
@@ -21,10 +21,10 @@ curl https://install.meteor.com/ | sh
 
 #### Clone repository    
 ```
-git clone https://github.com/EmurgoHK/emurgolance.git
+git clone https://github.com/Blockrazor/deeplance.git
 ```
 
-Note: if you want to edit things and send a pull request you should _fork_ this project on Github first and clone _your_ fork instead of https://github.com/EmurgoHK/emurgolance.git.
+Note: if you want to edit things and send a pull request you should _fork_ this project on Github first and clone _your_ fork instead of https://github.com/Blockrazor/deeplance.git.
 
 #### Install Dependencies   
 ```
@@ -62,8 +62,8 @@ If you do a `git pull` and Meteor doesn't start, the first thing to do is run `m
 </details>    
 
 
-## Contributing to Emurgolance    
-A cardinal sin that many open source developers make is to place themselves above others. "I founded this project thus my intellect is superior to that of others". It's immodest and rude, and usually inaccurate. The contribution policy we use at Emurgolance applies equally to everyone, without distinction.    
+## Contributing to Deeplance    
+A cardinal sin that many open source developers make is to place themselves above others. "I founded this project thus my intellect is superior to that of others". It's immodest and rude, and usually inaccurate. The contribution policy we use at Deeplance applies equally to everyone, without distinction.    
 
 The contribution policy we follow is the [Collective Code Construction Contract (C4)](/CONTRIBUTING.MD)    
 
@@ -89,26 +89,26 @@ The project style guide is [here](/STYLES.md).
 
 If at some point you want to abandon the issue and let someone else have a go, comment: @emurgobot abandon.
 
-4. Add the Emurgolance repository as an upstream source and pull any changes:    
+4. Add the Deeplance repository as an upstream source and pull any changes:    
 ```
-@: git remote add upstream git://github.com/emurgohk/emurgolance //only needs to be done once
+@: git remote add upstream git://github.com/Blockrazor/deeplance //only needs to be done once
 @: git checkout master //just to make sure you're on the correct branch
 @: git pull upstream master //this grabs any code that has changed, you want to be working on the latest 'version'
 @: git push //update your remote fork with the changes you just pulled from upstream master
 ```
 5. Create a local branch on your machine `git checkout -b branch_name` (it's usually a good idea to call the branch something that describes the problem you are solving). _Never_ develop on the `master` branch, as the `master` branch is exclusively used to accept incoming changes from `upstream:master` and you'll run into problems if you try to use it for anything else.
 6. Solve the problem in the absolute most simple and fastest possible way with the smallest number of changes humanly possible. Tell other people what you're doing by putting _very clear and descriptive comments in your code every 2-3 lines_.    
-Add your name to the AUTHORS file so that you become a part owner of Emurgolance.    
+Add your name to the AUTHORS file so that you become a part owner of Deeplance.    
 7. Commit your changes to your own fork:
-Before you commit changes, you should check if you are working on the latest version (again). Go to the github website and open _your_ fork of Emurigs, it should say _This branch is even with emurgolance:master._    
-If **not**, you need to pull the latest changes from the upstream Emurgolance repository and replay your changes on top of the latest version:
+Before you commit changes, you should check if you are working on the latest version (again). Go to the github website and open _your_ fork of Deeplance, it should say _This branch is even with deeplance:master._    
+If **not**, you need to pull the latest changes from the upstream Deeplance repository and replay your changes on top of the latest version:
 ```
 @: git stash //save your work locally
 @: git checkout master
 @: git pull upstream master
 @: git push
 @: git checkout -b branch_name_stash
-@: git stash pop //_replay_ your work on the new branch which is now fully up to date with the Emurgolance repository
+@: git stash pop //_replay_ your work on the new branch which is now fully up to date with the Deeplance repository
 ```
 
 Note: after running `git stash pop` you should run Meteor and look over your code again and check that everything still works as sometimes a file you worked on was changed in the meantime.
@@ -125,7 +125,7 @@ And then commit your changes:
 >solution: short description of how you solved the problem.' //Now you can close the ''. Be sure to mention the issue number if there is one (e.g. #6)    
 @: git push //this will send your changes to _your_ fork on Github
 ```    
-8. Go to your fork on Github and select the branch you just worked on. Click "pull request" to send a pull request back to the Emurgolance repository.
+8. Go to your fork on Github and select the branch you just worked on. Click "pull request" to send a pull request back to the Deeplance repository.
 9. Send the pull request, be sure to mention the issue number with a # symbol at the front (e.g. #1014).  
 10. Go back to the issue, and make a comment: `@emurgobot label "done"`. This will label this issue as complete, and everyone can test your solution and close the issue if it solves the problem.
 
@@ -147,7 +147,7 @@ You should generally write a test for anything you don't want to break later, ot
 </details>    
 
 <details>
-  <summary>Can I be paid to contribute to Emurgolance?</summary>
+  <summary>Can I be paid to contribute to Deeplance?</summary>
 <p>
 
 Yes, this is sometimes possible.
@@ -158,7 +158,7 @@ If your code is amazing and brilliant but you don't understand the contribution 
 
 Make sure you follow the project on Github so you get updates.
 
-Contact the Emurgolance BDFL (Benevolent Dictator For Life): gareth AT emurgo.io if you've been contributing code to emurgolance and want to keep doing it but you are hungry.
+Contact the Deeplance BDFL (Benevolent Dictator For Life): gareth.hayes AT gmail.com if you've been contributing code to emurgolance and want to keep doing it but you are hungry.
 
 </p>
 </details>
@@ -176,7 +176,7 @@ Contact the Emurgolance BDFL (Benevolent Dictator For Life): gareth AT emurgo.io
 
 3. Your pull requests should be a glowing example to others of how to work with the C4. Each one should be a model that others can refer to.
 
-4. In an ideal world, you would be able to work on any issue you want and there would be no need to assign tasks so that our budget is kept under control. This would be possible because you would always work on the the problems that are _really_ worth solving _right now_ to get to some form of MVP. We can't predict the future, there are no plans or roadmaps (these are not compatible with the C4). Emurgolance grows through evolution not intelligent design or central planning. So if something isn't an in-your-face problem right now, it may never be, we could end up going down a totally different road before we get to it. While we want to avoid technical debt, we also don't want to be working on things that will someday maybe become a problem if Emurgolance becomes a thing. Demonstrate that we can trust _your_ own judgement on what you should be working on and what's worth spending time on.
+4. In an ideal world, you would be able to work on any issue you want and there would be no need to assign tasks so that our budget is kept under control. This would be possible because you would always work on the the problems that are _really_ worth solving _right now_ to get to some form of MVP. We can't predict the future, there are no plans or roadmaps (these are not compatible with the C4). Deeplance grows through evolution not intelligent design or central planning. So if something isn't an in-your-face problem right now, it may never be, we could end up going down a totally different road before we get to it. While we want to avoid technical debt, we also don't want to be working on things that will someday maybe become a problem if Deeplance becomes a thing. Demonstrate that we can trust _your_ own judgement on what you should be working on and what's worth spending time on.
 </p>
 </details>
 
@@ -184,8 +184,8 @@ Contact the Emurgolance BDFL (Benevolent Dictator For Life): gareth AT emurgo.io
 The license and contribution policy are two halves of the same puzzle. This project is licensed under the [MPL v2.0 license](LICENSE). The code is owned (and Copyright) by _all_ contributors. Contributors are listed in the [AUTHORS](AUTHORS) file. Please add your name to the end of this file in your first pull request so that you also become an owner.
 
 This license ensures that:
-1. Contributors to Emurgolance cannot have their code stolen and used by closed-source projects without their permission. It's very common for corporate software merchants to steal code from open source projects and use it in their closed source or even patented products and services in direct competition with the original project. For example, anyone who contributes code to a project released under a BSD/MIT style license effectively has no rights to their own code or any improvements made upon it.
-2. Anyone using any code from Emurgolance must also share their work under a _share-alike_ license so that anyone else can use their improvements.
-3. No one can change the above, without explicit written permission from _all_ contributors, which is essentially impossible to get. That means even the founder of this project cannot ever relicense and sell Emurgolance and its code. It belongs to everyone who contributed to it (and it always will).
+1. Contributors to Deeplance cannot have their code stolen and used by closed-source projects without their permission. It's very common for corporate software merchants to steal code from open source projects and use it in their closed source or even patented products and services in direct competition with the original project. For example, anyone who contributes code to a project released under a BSD/MIT style license effectively has no rights to their own code or any improvements made upon it.
+2. Anyone using any code from Deeplance must also share their work under a _share-alike_ license so that anyone else can use their improvements.
+3. No one can change the above, without explicit written permission from _all_ contributors, which is essentially impossible to get. That means even the founder of this project cannot ever relicense and sell Deeplance and its code. It belongs to everyone who contributed to it (and it always will).
 
 It is not permissible to use _any_ code from this codebase in _anything_ that isn't using a _share-alike_ license. Violations of the license will absolutely not be tolerated, and the terms of this license will be _brutally_ enforced through a variety of _very_ creative methods.
