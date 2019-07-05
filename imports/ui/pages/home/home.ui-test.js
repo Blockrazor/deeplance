@@ -25,7 +25,7 @@ describe('Home route', function () {
     })
 
     it('user should be able to start working on an issue', () => {
-        const issueUrl = 'https://github.com/EmurgoHK/emurgolance/issues/67'
+        const issueUrl = 'https://github.com/Blockrazor/deeplance/issues/67'
 
         browser.setValue('#js-issue', issueUrl)
 
@@ -64,7 +64,7 @@ describe('Home route', function () {
     })
 
     it('user should be able to finish working on an issue', () => {
-        const prURL = 'https://github.com/EmurgoHK/emurgolance/pull/116'
+        const prURL = 'https://github.com/Blockrazor/deeplance/pull/116'
         
         browser.click('#js-finish')
         browser.pause(3000)

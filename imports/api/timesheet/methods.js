@@ -450,11 +450,11 @@ if (Meteor.isDevelopment) {
   				owner: Meteor.userId(),
   				start: startTime, // original start time
   				startTime: startTime, // changes each time the time is paused
-           		project: 'EmurgoHK', // project related to the issue
+           		project: 'Blockrazor', // project related to the issue
   				active: true,
   				finished: false,
   				paused: true,
-				issue: 'https://github.com/EmurgoHK/emurgolance/issues/101',
+				issue: 'https://github.com/Blockrazor/deeplance/issues/101',
 				rate: Meteor.user().profile.hourlyRate, // user's current hourly rate,
 				endTime: endTime,
 				totalTime: totalTime,
@@ -471,11 +471,11 @@ if (Meteor.isDevelopment) {
   				owner: Meteor.userId(),
   				start: startTime, // original start time
   				startTime: startTime, // changes each time the time is paused
-           		project: 'EmurgoHK', // project related to the issue
+           		project: 'Blockrazor', // project related to the issue
   				active: false,
   				finished: true,
   				paused: false,
-				issue: 'https://github.com/EmurgoHK/Emurgolance/issues/44',
+				issue: 'https://github.com/Blockrazor/deeplance/issues/44',
 				rate: Meteor.user().profile.hourlyRate, // user's current hourly rate,
 				endTime: endTime,
 				totalTime: totalTime,

@@ -4,7 +4,7 @@ import mkdirp from "mkdirp";
 
 import { isModerator } from "../users/methods";
 
-const parent = Meteor.isServer ? mkdirp.sync(path.join(os.tmpdir(), "emurgolance", "invoices")) : "";
+const parent = Meteor.isServer ? mkdirp.sync(path.join(os.tmpdir(), "deeplance", "invoices")) : "";
 
 export const Invoices = new FS.Collection("invoices", {
   stores: [new FS.Store.FileSystem("invoices", { path: parent })]

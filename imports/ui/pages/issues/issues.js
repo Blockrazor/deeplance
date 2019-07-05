@@ -44,7 +44,7 @@ Template.issues.helpers({
     ).fetch();
   },
   removeHostname: url => {
-    return url.replace(/http(s|):\/\/github.com\/(blockrazor|emurgohk)\//i, "");
+    return url.replace(/http(s|):\/\/github.com\/(blockrazor)\//i, "");
   },
   projectName: url => {
     return url.split("/")[4];

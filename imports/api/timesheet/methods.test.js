@@ -13,7 +13,7 @@ Meteor.user = () => ({ profile: { name: 'Test User'} })
 describe('Timesheet methods', () => {
     
     it('user can start working on a valid issue', () => {
-        const issue = 'https://github.com/EmurgoHK/emurgolance/issues/67'
+        const issue = 'https://github.com/Blockrazor/deeplance/issues/67'
 
         return callWithPromise('startWork', {
             issue: issue
@@ -25,7 +25,7 @@ describe('Timesheet methods', () => {
             assert.ok(timesheet)
             assert.equal(timesheet.issue, issue)
             assert.ok(timesheet.active)
-            assert.equal(timesheet.project, 'Emurgolance'.toLowerCase())
+            assert.equal(timesheet.project, 'Deeplance'.toLowerCase())
         })
     }).timeout(15000)
 
@@ -42,7 +42,7 @@ describe('Timesheet methods', () => {
     }).timeout(15000)
 
     it('user cannot start working on two issues at the same time', () => {
-        const issue = 'https://github.com/EmurgoHK/emurgolance/issues/67'
+        const issue = 'https://github.com/Blockrazor/deeplance/issues/67'
 
         return callWithPromise('startWork', {
             issue: issue
@@ -140,7 +140,7 @@ describe('Timesheet methods', () => {
             project: 'Test project', // project related to the issue
             active: false,
             paused: true,
-            issue: 'https://github.com/EmurgoHK/Emurgolance/issues/44',
+            issue: 'https://github.com/Blockrazor/deeplance/issues/44',
             rate: Meteor.user().profile.hourlyRate // user's current hourly rate
         })
 
@@ -188,7 +188,7 @@ describe('Timesheet methods', () => {
 
         return callWithPromise('finishWork', {
             workId: work._id,
-            pr: 'https://github.com/EmurgoHK/emurgolance/pull/116'
+            pr: 'https://github.com/Blockrazor/deeplance/pull/116'
         }).then(tId => {
             let timesheet = Timesheet.findOne({
                 _id: work._id
@@ -212,7 +212,7 @@ describe('Timesheet methods', () => {
 
         return callWithPromise('finishWork', {
             workId: work._id,
-            pr: 'https://github.com/EmurgoHK/emurgolance/pull/116'
+            pr: 'https://github.com/Blockrazor/deeplance/pull/116'
         }).then(tId => {
             assert.isNull(tId)
         }).catch(err => {
@@ -262,7 +262,7 @@ describe('Timesheet methods', () => {
 
         return callWithPromise('finishWork', {
             workId: work._id,
-            pr: 'https://github.com/EmurgoHK/emurgolance/pull/115'
+            pr: 'https://github.com/Blockrazor/deeplance/pull/115'
         }).then(tId => {
             assert.isNull(tId)
         }).catch(err => {
