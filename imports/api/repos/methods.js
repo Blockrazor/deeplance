@@ -18,7 +18,7 @@ export const updateGithubRepos = new ValidatedMethod({
   name: "updateGithubRepos",
   validate: null,
   run({}) {
-    let providerUrl = `https://api.github.com/orgs/EmurgoHK/repos${
+    let providerUrl = `https://api.github.com/orgs/Blockrazor/repos${
       token ? `?access_token=${token}` : ""
     }`;
     if (!shouldUpdate("GitHub", "repos")) return;

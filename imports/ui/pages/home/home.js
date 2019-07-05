@@ -45,7 +45,7 @@ Template.home.onCreated(function() {
 
 Template.home.helpers({
 	removeHostname: (url) => {
-			return url.replace(/http(s|):\/\/github.com\/(blockrazor|emurgohk)\//i, '')
+			return url.replace(/http(s|):\/\/github.com\/(blockrazor)\//i, '')
 	},
 	dashboardCounts: () =>{
 		return Template.instance().calcDashboard.get();

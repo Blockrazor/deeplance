@@ -22,7 +22,7 @@ Template.userInfo.onCreated(function() {
 
 Template.userInfo.helpers({
 	removeHostname: (url) => {
-       return url.replace(/http(s|):\/\/github.com\/(blockrazor|emurgohk)\//i, '')
+       return url.replace(/http(s|):\/\/github.com\/(blockrazor)\//i, '')
     },
 	user: () => Meteor.users.findOne({ _id: FlowRouter.getParam('id') }),
 	totalEarnings: () => {

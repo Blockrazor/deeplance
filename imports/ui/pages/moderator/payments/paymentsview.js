@@ -48,7 +48,7 @@ Template.paymentsview.helpers({
         return manualPayments.fetch().reduce((acc, curr) => acc + curr.amount, 0)
     },
     removeHostname: (url) => {
-       return url.replace(/http(s|):\/\/github.com\/(blockrazor|emurgohk)\//i, '')
+       return url.replace(/http(s|):\/\/github.com\/(blockrazor)\//i, '')
     },
     markedForApproval: (id) => {
         //check to see if the payment has been made.
