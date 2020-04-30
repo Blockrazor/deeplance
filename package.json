@@ -17,7 +17,7 @@
     "chart.js": "^2.7.2",
     "fibers": "^3.0.0",
     "flag-icon-css": "3.0.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "meteor-node-stubs": "^0.3.2",
     "mkdirp": "^0.5.1",
     "moment": "^2.22.1",
